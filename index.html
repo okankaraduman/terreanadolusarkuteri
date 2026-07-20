@@ -5,16 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Terre Anadolu Şarküteri; taze süt, ev yapımı yoğurt, günlük yufka, peynir çeşitleri, pastırma, sucuk ve doğal Anadolu lezzetlerini Nilüfer'de buluşturur."
+      content="Nilüfer, Bursa'da taze süt, ev yapımı yoğurt, günlük yufka, peynir çeşitleri, pastırma, sucuk ve doğal Anadolu lezzetleri Terre'de."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#f4ead3" />
+    <link rel="canonical" href="https://terreanadolusarkuteri.pages.dev/" />
     <meta property="og:title" content="Terre Anadolu Şarküteri | Nilüfer, Bursa" />
     <meta
       property="og:description"
       content="Doğal ve gurme Anadolu lezzetleri, özenle seçilmiş ürünler ve mahalle sıcaklığı."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/terre-hero.jpg" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Terre Anadolu Şarküteri" />
+    <meta property="og:url" content="https://terreanadolusarkuteri.pages.dev/" />
+    <meta property="og:image" content="https://terreanadolusarkuteri.pages.dev/assets/terre-hero.jpg" />
+    <meta property="og:image:width" content="1774" />
+    <meta property="og:image:height" content="887" />
+    <meta property="og:image:alt" content="Terre Anadolu Şarküteri'nin Anadolu lezzetleri seçkisi" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Terre Anadolu Şarküteri | Nilüfer, Bursa" />
+    <meta
+      name="twitter:description"
+      content="Doğal ve gurme Anadolu lezzetleri, özenle seçilmiş ürünler ve mahalle sıcaklığı."
+    />
+    <meta name="twitter:image" content="https://terreanadolusarkuteri.pages.dev/assets/terre-hero.jpg" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGFZ4H8YH2"></script>
     <script>
@@ -26,6 +41,7 @@
       gtag('config', 'G-CGFZ4H8YH2');
     </script>
     <link rel="icon" type="image/png" href="assets/terre-logo.png" />
+    <link rel="apple-touch-icon" href="assets/terre-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,25 +53,51 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "GroceryStore",
-        "name": "Terre Anadolu Şarküteri",
-        "image": "assets/terre-logo.png",
-        "telephone": "+90 535 829 14 55",
-        "hasMap": "https://www.google.com/maps/place/Terre+Anadolu+%C5%9Eark%C3%BCteri/@40.2277712,28.9210032,17z/data=!3m1!4b1!4m6!3m5!1s0x14ca13e2b9bfb135:0xda5446d1878a542a!8m2!3d40.2277712!4d28.9235781!16s%2Fg%2F11mrmwdmp8",
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 40.2277712,
-          "longitude": 28.9235781
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Altınşehir Mah. Muammer Aksoy Cad. No: 8C/H",
-          "postalCode": "16120",
-          "addressLocality": "Nilüfer",
-          "addressRegion": "Bursa",
-          "addressCountry": "TR"
-        },
-        "sameAs": ["https://www.instagram.com/terreanadolusarkuteri/"]
+        "@graph": [
+          {
+            "@type": "GroceryStore",
+            "@id": "https://terreanadolusarkuteri.pages.dev/#business",
+            "name": "Terre Anadolu Şarküteri",
+            "url": "https://terreanadolusarkuteri.pages.dev/",
+            "description": "Nilüfer'de doğal ve gurme Anadolu lezzetleri sunan yerel şarküteri.",
+            "logo": "https://terreanadolusarkuteri.pages.dev/assets/terre-logo.png",
+            "image": [
+              "https://terreanadolusarkuteri.pages.dev/assets/terre-hero.jpg",
+              "https://terreanadolusarkuteri.pages.dev/assets/terre-logo.png"
+            ],
+            "telephone": "+90 535 829 14 55",
+            "hasMap": "https://www.google.com/maps/place/Terre+Anadolu+%C5%9Eark%C3%BCteri/@40.2277712,28.9210032,17z/data=!3m1!4b1!4m6!3m5!1s0x14ca13e2b9bfb135:0xda5446d1878a542a!8m2!3d40.2277712!4d28.9235781!16s%2Fg%2F11mrmwdmp8",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 40.2277712,
+              "longitude": 28.9235781
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Altınşehir Mah. Muammer Aksoy Cad. No: 8C/H",
+              "postalCode": "16120",
+              "addressLocality": "Nilüfer",
+              "addressRegion": "Bursa",
+              "addressCountry": "TR"
+            },
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Nilüfer, Bursa"
+            },
+            "sameAs": [
+              "https://www.instagram.com/terreanadolusarkuteri/",
+              "https://www.google.com/maps/place/Terre+Anadolu+%C5%9Eark%C3%BCteri/@40.2277712,28.9210032,17z/data=!3m1!4b1!4m6!3m5!1s0x14ca13e2b9bfb135:0xda5446d1878a542a!8m2!3d40.2277712!4d28.9235781!16s%2Fg%2F11mrmwdmp8"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://terreanadolusarkuteri.pages.dev/#website",
+            "url": "https://terreanadolusarkuteri.pages.dev/",
+            "name": "Terre Anadolu Şarküteri",
+            "inLanguage": "tr-TR",
+            "publisher": { "@id": "https://terreanadolusarkuteri.pages.dev/#business" }
+          }
+        ]
       }
     </script>
   </head>
@@ -265,6 +307,36 @@
               <span>Samimi hizmet</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="faq section-shell" id="sss" aria-labelledby="faq-title">
+        <div class="faq-heading reveal">
+          <p class="eyebrow">Merak edilenler</p>
+          <h2 id="faq-title">Terre hakkında<br />kısa kısa.</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>Terre Anadolu Şarküteri nerede?</summary>
+            <p>
+              Altınşehir Mahallesi, Muammer Aksoy Caddesi No: 8C/H, Nilüfer / Bursa adresindeyiz. Sayfanın
+              altındaki “Yol tarifi al” düğmesi sizi doğrudan Google Haritalar konumumuza götürür.
+            </p>
+          </details>
+          <details>
+            <summary>Hangi ürünleri bulabilirim?</summary>
+            <p>
+              Taze Jersey, inek ve manda sütü; ev yapımı yoğurt, günlük el açması yufka, peynir çeşitleri,
+              doğal tereyağı, pastırma, sucuk, reçel, sirke, salça ve turşu çeşitleri sunuyoruz.
+            </p>
+          </details>
+          <details>
+            <summary>Güncel ürün ve stok bilgisini nasıl öğrenebilirim?</summary>
+            <p>
+              Günlük gelen ürünler ve stok durumu için 0535 829 14 55 numaralı telefondan arayabilir veya
+              WhatsApp üzerinden bize yazabilirsiniz.
+            </p>
+          </details>
         </div>
       </section>
 

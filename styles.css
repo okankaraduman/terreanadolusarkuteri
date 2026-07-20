@@ -154,6 +154,25 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5rem); letter-spacing: -.
 .promise-points { margin-top: 46px; display: flex; flex-wrap: wrap; gap: 10px; }
 .promise-points span { padding: 9px 15px; border: 1px solid rgba(255,255,255,.25); border-radius: 999px; font-size: .8rem; }
 
+.faq { padding: 145px 0 20px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 100px; }
+.faq-heading h2 { font-size: clamp(2.8rem, 5vw, 4.8rem); }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-list details { border-bottom: 1px solid var(--line); }
+.faq-list summary {
+  position: relative;
+  padding: 26px 52px 26px 0;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: "+"; position: absolute; right: 4px; top: 20px; font-family: var(--body); font-size: 1.7rem; font-weight: 400; transition: transform .2s; }
+.faq-list details[open] summary::after { transform: rotate(45deg); }
+.faq-list details p { max-width: 680px; padding: 0 50px 24px 0; color: rgba(71,38,0,.68); }
+
 .visit { padding: 150px 0; }
 .visit-card { position: relative; padding: 75px; background: var(--paper); border-radius: var(--radius); overflow: hidden; box-shadow: 0 18px 70px rgba(71,38,0,.08); }
 .visit-top { position: relative; z-index: 1; max-width: 850px; }
@@ -192,6 +211,7 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5rem); letter-spacing: -.
   .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
   .intro, .promise-grid { grid-template-columns: 1fr; gap: 55px; }
+  .faq { grid-template-columns: 1fr; gap: 45px; }
   .product-grid { grid-template-columns: repeat(2, 1fr); }
   .section-heading, .brands-heading { align-items: start; flex-direction: column; }
   .brand-grid { grid-template-columns: repeat(2, 1fr); }
@@ -213,6 +233,7 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5rem); letter-spacing: -.
   .hero-note { display: none; }
   .intro { padding: 95px 0; }
   .products, .brands-section, .promise, .visit { padding: 95px 0; }
+  .faq { padding: 95px 0 0; }
   .product-grid { grid-template-columns: 1fr; }
   .product-card { min-height: 300px; }
   .brand-grid { gap: 10px; }
