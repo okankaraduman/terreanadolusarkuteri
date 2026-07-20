@@ -122,6 +122,26 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5rem); letter-spacing: -.
 .ask-card h3 { max-width: 270px; margin-bottom: 28px; font-size: 2.5rem; }
 .ask-card .card-index { color: rgba(255,255,255,.55); }
 
+.brands-section { padding: 130px 0 145px; background: #e8d8b9; }
+.brands-heading { margin-bottom: 58px; display: flex; align-items: end; justify-content: space-between; gap: 50px; }
+.brands-heading h2 { font-size: clamp(2.8rem, 5vw, 4.8rem); }
+.brands-heading > p { max-width: 390px; margin-bottom: 8px; color: rgba(71,38,0,.65); }
+.brand-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.brand-card {
+  min-height: 180px;
+  padding: 34px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,250,240,.72);
+  border: 1px solid rgba(71,38,0,.09);
+  border-radius: 18px;
+  transition: transform .25s, background .25s, box-shadow .25s;
+}
+.brand-card:hover { transform: translateY(-4px); background: var(--paper); box-shadow: 0 14px 35px rgba(71,38,0,.08); }
+.brand-card img { width: auto; max-width: 82%; max-height: 105px; object-fit: contain; }
+.brand-card.dark-logo { padding: 22px; background: #2d2d2d; }
+.brand-card.dark-logo img { max-height: 136px; border-radius: 8px; }
+
 .promise { padding: 150px 0; background: var(--ink); color: var(--paper); overflow: hidden; }
 .promise-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 100px; }
 .promise-mark { position: relative; aspect-ratio: 1; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; }
@@ -173,7 +193,8 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5rem); letter-spacing: -.
   .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
   .intro, .promise-grid { grid-template-columns: 1fr; gap: 55px; }
   .product-grid { grid-template-columns: repeat(2, 1fr); }
-  .section-heading { align-items: start; flex-direction: column; }
+  .section-heading, .brands-heading { align-items: start; flex-direction: column; }
+  .brand-grid { grid-template-columns: repeat(2, 1fr); }
   .promise-mark { max-width: 570px; width: 100%; margin-inline: auto; }
   .visit-stamp { opacity: .3; }
 }
@@ -191,9 +212,14 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5rem); letter-spacing: -.
   .hero-actions .button { width: 100%; }
   .hero-note { display: none; }
   .intro { padding: 95px 0; }
-  .products, .promise, .visit { padding: 95px 0; }
+  .products, .brands-section, .promise, .visit { padding: 95px 0; }
   .product-grid { grid-template-columns: 1fr; }
   .product-card { min-height: 300px; }
+  .brand-grid { gap: 10px; }
+  .brand-card { min-height: 135px; padding: 21px; }
+  .brand-card img { max-width: 90%; max-height: 80px; }
+  .brand-card.dark-logo { padding: 14px; }
+  .brand-card.dark-logo img { max-height: 105px; }
   .promise-grid { gap: 65px; }
   .visit-card { padding: 42px 24px; }
   .visit-top h2 { margin-bottom: 45px; font-size: 2.8rem; }
