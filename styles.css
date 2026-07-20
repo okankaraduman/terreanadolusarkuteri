@@ -126,21 +126,26 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5rem); letter-spacing: -.
 .brands-heading { margin-bottom: 58px; display: flex; align-items: end; justify-content: space-between; gap: 50px; }
 .brands-heading h2 { font-size: clamp(2.8rem, 5vw, 4.8rem); }
 .brands-heading > p { max-width: 390px; margin-bottom: 8px; color: rgba(71,38,0,.65); }
-.brand-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.brand-grid { display: grid; grid-template-columns: 1fr; border-top: 1px solid var(--line); }
 .brand-card {
-  min-height: 180px;
-  padding: 34px;
+  min-height: 148px;
+  padding: 18px 24px;
   display: grid;
-  place-items: center;
-  background: rgba(255,250,240,.72);
-  border: 1px solid rgba(71,38,0,.09);
-  border-radius: 18px;
-  transition: transform .25s, background .25s, box-shadow .25s;
+  grid-template-columns: 240px 1fr auto;
+  align-items: center;
+  gap: 34px;
+  border-bottom: 1px solid var(--line);
+  transition: padding .25s, background .25s;
 }
-.brand-card:hover { transform: translateY(-4px); background: var(--paper); box-shadow: 0 14px 35px rgba(71,38,0,.08); }
-.brand-card img { width: auto; max-width: 82%; max-height: 105px; object-fit: contain; }
-.brand-card.dark-logo { padding: 22px; background: #2d2d2d; }
-.brand-card.dark-logo img { max-height: 136px; border-radius: 8px; }
+.brand-card:hover { padding-inline: 32px 16px; background: rgba(255,250,240,.55); }
+.brand-logo { width: 220px; height: 108px; padding: 18px 24px; display: grid; place-items: center; background: rgba(255,250,240,.78); border: 1px solid rgba(71,38,0,.08); border-radius: 14px; }
+.brand-logo img { width: auto; max-width: 100%; max-height: 78px; object-fit: contain; }
+.brand-card.dark-logo .brand-logo { padding: 10px; background: #2d2d2d; }
+.brand-card.dark-logo img { max-height: 88px; border-radius: 7px; }
+.brand-card > strong { font-family: var(--display); font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.1; }
+.brand-link { display: inline-flex; align-items: center; gap: 9px; color: rgba(71,38,0,.62); font-size: .78rem; font-weight: 700; letter-spacing: .04em; }
+.brand-link span { font-size: 1rem; transition: transform .2s; }
+.brand-card:hover .brand-link span { transform: translate(3px,-3px); }
 
 .promise { padding: 150px 0; background: var(--ink); color: var(--paper); overflow: hidden; }
 .promise-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 100px; }
@@ -214,7 +219,8 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5rem); letter-spacing: -.
   .faq { grid-template-columns: 1fr; gap: 45px; }
   .product-grid { grid-template-columns: repeat(2, 1fr); }
   .section-heading, .brands-heading { align-items: start; flex-direction: column; }
-  .brand-grid { grid-template-columns: repeat(2, 1fr); }
+  .brand-card { grid-template-columns: 190px 1fr auto; gap: 24px; }
+  .brand-logo { width: 170px; }
   .promise-mark { max-width: 570px; width: 100%; margin-inline: auto; }
   .visit-stamp { opacity: .3; }
 }
@@ -236,11 +242,13 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5rem); letter-spacing: -.
   .faq { padding: 95px 0 0; }
   .product-grid { grid-template-columns: 1fr; }
   .product-card { min-height: 300px; }
-  .brand-grid { gap: 10px; }
-  .brand-card { min-height: 135px; padding: 21px; }
-  .brand-card img { max-width: 90%; max-height: 80px; }
-  .brand-card.dark-logo { padding: 14px; }
-  .brand-card.dark-logo img { max-height: 105px; }
+  .brand-card, .brand-card:hover { min-height: 128px; padding: 15px 0; grid-template-columns: 122px 1fr; gap: 8px 18px; }
+  .brand-logo { grid-row: 1 / span 2; width: 122px; height: 92px; padding: 15px; }
+  .brand-logo img { max-height: 66px; }
+  .brand-card.dark-logo .brand-logo { padding: 8px; }
+  .brand-card.dark-logo img { max-height: 72px; }
+  .brand-card > strong { align-self: end; font-size: 1.28rem; }
+  .brand-link { align-self: start; font-size: .68rem; }
   .promise-grid { gap: 65px; }
   .visit-card { padding: 42px 24px; }
   .visit-top h2 { margin-bottom: 45px; font-size: 2.8rem; }
