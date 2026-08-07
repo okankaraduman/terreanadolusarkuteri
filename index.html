@@ -10,6 +10,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#f4ead3" />
     <link rel="canonical" href="https://terreanadolusarkuteri.com/" />
+    <link rel="preload" as="image" href="assets/terre-hero.webp" type="image/webp" fetchpriority="high" />
     <meta property="og:title" content="Bursa Şarküteri | Terre Anadolu Şarküteri – Nilüfer" />
     <meta
       property="og:description"
@@ -110,6 +111,44 @@
             "name": "Terre Anadolu Şarküteri",
             "inLanguage": "tr-TR",
             "publisher": { "@id": "https://terreanadolusarkuteri.com/#business" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://terreanadolusarkuteri.com/#sss",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Terre Anadolu Şarküteri nerede?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Altınşehir Mahallesi, Muammer Aksoy Caddesi No: 8C/H, 16120 Nilüfer / Bursa adresindeyiz."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Hangi ürünleri bulabilirim?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Günlük süt, manda-inek yoğurdu, el açması yufka, mantı, erişte, peynir çeşitleri, doğal tereyağı, fermente sucuk, reçel, sirke, pekmez, meyve özü, salça, tahin, bakliyat ve baharat sunuyoruz."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Güncel ürün ve stok bilgisini nasıl öğrenebilirim?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Günlük gelen ürünler ve stok durumu için 0535 829 15 55 numaralı telefondan arayabilir veya WhatsApp üzerinden bize yazabilirsiniz."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Online sipariş verebilir miyim?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Trendyol Go uygulamasında teslimat adresinizi seçtikten sonra Market bölümünde Terre Anadolu Şarküteri olarak arama yapabilir ve listelenen ürünler üzerinden sipariş oluşturabilirsiniz."
+                }
+              }
+            ]
           }
         ]
       }
@@ -142,12 +181,17 @@
 
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
-        <img
-          class="hero-image"
-          src="assets/terre-hero.jpg"
-          alt="Anadolu peynirleri, sucuk, pastırma, zeytin ve köy ekmeğinden oluşan şarküteri sofrası"
-          fetchpriority="high"
-        />
+        <picture>
+          <source srcset="assets/terre-hero.webp" type="image/webp" />
+          <img
+            class="hero-image"
+            src="assets/terre-hero.jpg"
+            alt="Anadolu peynirleri, sucuk, pastırma, zeytin ve köy ekmeğinden oluşan şarküteri sofrası"
+            width="1774"
+            height="887"
+            fetchpriority="high"
+          />
+        </picture>
         <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow light">Altınşehir, Nilüfer’in yerel şarküterisi</p>
