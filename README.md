@@ -22,3 +22,5 @@ Dosyalar GitHub Pages, Cloudflare Pages, Netlify veya benzeri herhangi bir stati
 - `styles.css`: Görsel sistem ve responsive düzen
 - `script.js`: Mobil menü ve kaydırma animasyonları
 - `assets/`: Logo ve hero görseli
+- `catalog.json`: Arama sistemleri ve agent'lar için makine tarafından okunabilir ürün kataloğu
+- `llms.txt`: AI sistemleri için kısa işletme özeti, resmi kaynaklar ve aksiyon bağlantıları

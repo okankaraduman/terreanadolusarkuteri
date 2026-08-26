@@ -3,6 +3,15 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Link: <https://terreanadolusarkuteri.com/catalog.json>; rel="alternate"; type="application/ld+json", <https://terreanadolusarkuteri.com/llms.txt>; rel="alternate"; type="text/plain"
 
 /assets/*
   Cache-Control: public, max-age=86400
+
+/catalog.json
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+/llms.txt
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600

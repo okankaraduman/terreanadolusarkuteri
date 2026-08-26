@@ -1,0 +1,82 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://terreanadolusarkuteri.com/catalog.json#catalog",
+  "url": "https://terreanadolusarkuteri.com/catalog.json",
+  "name": "Terre Anadolu Şarküteri ürün kataloğu",
+  "description": "Terre Anadolu Şarküteri'de sunulan peynir, süt ürünleri, kahvaltılık ve Anadolu lezzetlerinin makine tarafından okunabilir özeti.",
+  "inLanguage": "tr-TR",
+  "dateModified": "2026-08-26",
+  "provider": {
+    "@type": "GroceryStore",
+    "@id": "https://terreanadolusarkuteri.com/#business",
+    "name": "Terre Anadolu Şarküteri",
+    "url": "https://terreanadolusarkuteri.com/",
+    "telephone": "+90 535 829 15 55",
+    "email": "terreanadolu@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Altınşehir Mah. Muammer Aksoy Cad. No: 8C/H",
+      "postalCode": "16120",
+      "addressLocality": "Nilüfer",
+      "addressRegion": "Bursa",
+      "addressCountry": "TR"
+    }
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Ürün grupları",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "ProductGroup",
+          "name": "Peynir Çeşitleri",
+          "description": "Ezine, Mihaliç, Kars eski kaşarı, İzmir tulum peyniri, isli örgü ve hellim."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "ProductGroup",
+          "name": "Süt Ürünleri ve Kahvaltılık",
+          "description": "Günlük süt, manda-inek yoğurdu, tereyağı, köy yumurtası, bal, zeytin ve fermente sucuk."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "ProductGroup",
+          "name": "Yufka, Mantı ve Erişte",
+          "description": "Günlük el açması yufka, bohça mantı ve sade ya da sebzeli köy eriştesi."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "ProductGroup",
+          "name": "Reçel, Sirke ve Özler",
+          "description": "Meyve reçelleri, doğal sirkeler, pekmez, meyve özleri, salça, nar ekşisi ve tahin."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "ProductGroup",
+          "name": "Bakliyat ve Baharat",
+          "description": "Pirinç ve mercimek çeşitleri; köri, zerdeçal, sumak, kekik, karabiber ve doğal kaya tuzları."
+        }
+      }
+    ]
+  },
+  "potentialAction": {
+    "@type": "CommunicateAction",
+    "name": "Güncel ürün, fiyat ve stok bilgisini WhatsApp'tan sor",
+    "target": "https://wa.me/905358291555?text=Merhaba%20Terre%20Anadolu%20%C5%9Eark%C3%BCteri%2C%20g%C3%BCncel%20%C3%BCr%C3%BCn%20ve%20stok%20bilgisi%20almak%20istiyorum."
+  }
+}
