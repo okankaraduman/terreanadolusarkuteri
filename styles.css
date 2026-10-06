@@ -7,8 +7,8 @@
   --olive: #4a5a3f;
   --sand: #dac7a2;
   --line: rgba(71, 38, 0, 0.18);
-  --display: "Fraunces", Georgia, serif;
-  --body: "DM Sans", Arial, sans-serif;
+  --display: Georgia, "Times New Roman", serif;
+  --body: Arial, Helvetica, sans-serif;
   --radius: 24px;
   --max: 1240px;
 }
@@ -209,6 +209,17 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5rem); letter-spacing: -.
 .footer-links a:hover { color: #f3caae; }
 .footer-meta { color: rgba(255,250,240,.5); font-size: .78rem; text-align: right; }
 .footer-meta p { margin-bottom: 6px; }
+.consent-settings { padding: 0; border: 0; background: none; color: inherit; text-decoration: underline; cursor: pointer; }
+.consent-settings:hover { color: var(--paper); }
+.consent-banner { position: fixed; z-index: 50; left: 20px; right: 20px; bottom: 20px; max-width: 920px; margin-inline: auto; padding: 22px 26px; display: flex; align-items: center; gap: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); box-shadow: 0 15px 50px rgba(39,22,5,.25); }
+.consent-banner[hidden] { display: none; }
+.consent-banner h2 { margin: 0 0 6px; font-family: var(--body); font-size: 1.1rem; letter-spacing: 0; }
+.consent-banner p { margin: 0; font-size: .88rem; line-height: 1.5; }
+.consent-actions { display: flex; flex: none; gap: 10px; }
+.consent-actions button { min-height: 44px; padding: 10px 16px; border: 1px solid var(--ink); border-radius: 999px; background: transparent; color: var(--ink); font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; }
+.consent-actions #consent-accept { background: var(--ink); color: var(--paper); }
+.consent-actions button:hover { border-color: var(--red); }
+.consent-actions button:focus-visible, .consent-settings:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
 .floating-whatsapp { position: fixed; z-index: 25; right: 22px; bottom: 22px; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: #217a4b; color: white; box-shadow: 0 10px 30px rgba(0,0,0,.22); transition: transform .2s, background .2s; }
 .floating-whatsapp:hover { transform: translateY(-3px) scale(1.03); background: #19623b; }
 .floating-whatsapp svg { width: 27px; fill: currentColor; }
@@ -237,6 +248,8 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5rem); letter-spacing: -.
 }
 
 @media (max-width: 620px) {
+  .consent-banner { left: 10px; right: 10px; bottom: 10px; max-height: calc(100vh - 20px); overflow-y: auto; padding: 18px; flex-direction: column; align-items: stretch; gap: 16px; }
+  .consent-actions { flex-direction: column; }
   .section-shell, .nav-shell, .hero-content { width: min(calc(100% - 30px), var(--max)); }
   .nav-shell { height: 88px; }
   .brand img { width: 52px; height: 52px; }

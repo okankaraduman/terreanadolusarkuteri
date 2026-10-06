@@ -33,24 +33,8 @@
       content="Bursa Nilüfer’de Kars eski kaşarı, İzmir tulum peyniri, günlük süt ürünleri ve özenle seçilmiş Anadolu lezzetleri."
     />
     <meta name="twitter:image" content="https://terreanadolusarkuteri.com/assets/terre-hero.jpg" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGFZ4H8YH2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-CGFZ4H8YH2');
-    </script>
     <link rel="icon" type="image/png" href="assets/terre-logo-official.png" />
     <link rel="apple-touch-icon" href="assets/terre-logo-official.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
     <title>Bursa Peynir ve Şarküteri | Terre Anadolu Şarküteri – Nilüfer</title>
     <script type="application/ld+json">
@@ -551,10 +535,26 @@
         </div>
         <div class="footer-meta">
           <p>© <span id="year"></span> Terre Anadolu Şarküteri</p>
+          <button class="consent-settings" type="button" id="consent-settings">Çerez tercihleri</button>
           <a href="#top">Yukarı dön ↑</a>
         </div>
       </div>
     </footer>
+
+    <section class="consent-banner" id="consent-banner" role="region" aria-labelledby="consent-title" hidden>
+      <div>
+        <h2 id="consent-title">Analiz çerezleri</h2>
+        <p>
+          Sitemizin kullanımını anlamak için Google Analytics kullanmak istiyoruz. Kabul ederseniz Google'a
+          kullanım verileri gönderilir ve analiz çerezleri kaydedilir. Reddetmeniz siteyi kullanmanızı etkilemez.
+          Tercihinizi sayfanın altındaki “Çerez tercihleri” düğmesinden değiştirebilirsiniz.
+        </p>
+      </div>
+      <div class="consent-actions">
+        <button type="button" id="consent-reject">Reddet</button>
+        <button type="button" id="consent-accept">Kabul et</button>
+      </div>
+    </section>
 
     <a
       class="floating-whatsapp"
